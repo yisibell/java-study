@@ -20,18 +20,17 @@ public class LinkedList {
   public ListNode n4;
 
   public LinkedList() {
-    /* 初始化链表 1 -> 3 -> 2 -> 5 -> 4 */
-    // 初始化各个节点
-    n0 = new ListNode(1);
-    n1 = new ListNode(3);
-    n2 = new ListNode(2);
-    n3 = new ListNode(5);
-    n4 = new ListNode(4);
-    // 构建引用指向
-    n0.next = n1;
-    n1.next = n2;
-    n2.next = n3;
-    n3.next = n4;
+
+    this.n0 = new ListNode(1);
+    this.n1 = new ListNode(3);
+    this.n2 = new ListNode(2);
+    this.n3 = new ListNode(5);
+    this.n4 = new ListNode(4);
+    
+    this.n0.next = this.n1;
+    this.n1.next = this.n2;
+    this.n2.next = this.n3;
+    this.n3.next = this.n4;
   }
 
   public void insert(ListNode n0, ListNode P) {
