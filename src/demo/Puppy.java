@@ -1,15 +1,24 @@
 package demo;
 
 public class Puppy {
-  public String name;
+  public static enum AnimalType {
+    DOG,
+    CAT
+  }
 
-  public Puppy(String name) {
+  public String name;
+  public AnimalType type;
+
+  public Puppy(String name, AnimalType type) {
     this.name = name;
+    this.type = type;
   }
 
   public void say(String value) {
     System.out.println(this.name.length());
-    System.out.println(this.name + " say: " + value);
+    System.out.println("The " + this.type + " " + this.name + " say: " + value);
   }
+
+
 
 }
